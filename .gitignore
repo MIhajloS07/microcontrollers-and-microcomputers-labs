@@ -1,0 +1,87 @@
+```gitignore
+# ==============================
+# Operating System Files
+# ==============================
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ==============================
+# IDEs and Editors
+# ==============================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# Arduino and Embedded Development
+# ==============================
+
+# Compiled binaries and object files
+*.elf
+*.hex
+*.bin
+*.o
+*.a
+*.out
+
+# Debug and build files
+*.map
+*.dSYM/
+build/
+cmake-build-*/
+
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# ==============================
+# KiCad
+# ==============================
+
+# Local settings and lock files
+*.kicad_prl
+*.lck
+
+# Backup files
+*-backups/
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+
+# ==============================
+# Logs and Temporary Files
+# ==============================
+
+*.log
+*.tmp
+*.temp
+
+# ==============================
+# Secrets and Local Configuration
+# ==============================
+
+.env
+.env.*
+!.env.example
+```
