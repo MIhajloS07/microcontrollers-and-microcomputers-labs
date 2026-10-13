@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Motor Control</title>
+</head>
+
+<body>
+    <h2>DC Motor</h2>
+    <form action="/dc" method="post">
+        Speed (0-100): <input type="number" name="speed"><br>
+        Direction:
+        <select name="direction">
+            <option value="forward">Forward</option>
+            <option value="backward">Backward</option>
+        </select>
+        <input type="submit">
+    </form>
+
+
+    <h2>Servo Motor</h2>
+    <form action="/servo" method="post">
+        Angle (0-180): <input type="number" name="angle">
+        <input type="submit">
+    </form>
+
+
+    <h2>Stepper Motor</h2>
+    <form action="/stepper" method="post">
+        Direction:
+        <select name="direction">
+            <option value="1">Forward</option>
+            <option value="-1">Backward</option>
+        </select>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
