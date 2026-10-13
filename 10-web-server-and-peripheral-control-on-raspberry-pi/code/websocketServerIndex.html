@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket LED control</title>
+</head>
+
+<body>
+    <h2>WebSocket LED Control</h2>
+    <button onclick="ledOn()">Turn ON LED</button>
+    <button onclick="ledOff()">Turn OFF LED</button>
+    <p id="status">Status: unknown</p>
+    <script>
+        const socket = new WebSocket("ws://IP_ADDRESS:8765");
+        socket.onmessage = function (event) {
+            document.getElementById("status").innerText = "Status: " + event.data;
+        };
+        function ledOn() {
+            socket.send("ON");
+        }
+        function ledOff() {
+            socket.send("OFF");
+        }
+    </script>
+</body>
+
+</html>
